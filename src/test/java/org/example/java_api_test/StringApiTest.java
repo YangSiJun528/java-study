@@ -30,4 +30,12 @@ class StringApiTest {
         String result = input.toUpperCase();
         assertThat(result).isEqualTo("HELLO WORLD");
     }
+
+    @Test
+    @DisplayName("replaceAll 테스트")
+    public void replaceAll() {
+        String input = "Hello World, Hello Java";
+        String result = input.replaceAll("Hello","Bye");
+        assertThat(result).isEqualTo("Bye World, Bye Java");
+    }
 }
