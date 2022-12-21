@@ -23,4 +23,11 @@ class StringApiTest {
         assertThat(result).isEqualTo("1,2");
     }
 
+    @Test
+    @DisplayName("toUpperCase 테스트")
+    public void toUpperCase() {
+        String input = "Hello World";
+        String result = input.toUpperCase();
+        assertThat(result).isEqualTo("HELLO WORLD");
+    }
 }
